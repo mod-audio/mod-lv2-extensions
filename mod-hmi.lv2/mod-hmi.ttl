@@ -1,0 +1,22 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix hmi:  <http://moddevices.com/ns/hmi#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://moddevices.com/ns/hmi>
+    a owl:Ontology ;
+    lv2:documentation """
+<p>
+This is a vocabulary for describing meda-data related to the MOD HMI Widgets API.
+</p>
+""" .
+
+hmi:PluginNotification
+	a lv2:ExtensionData ;
+    rdfs:label "HMI Plugin Notification" ;
+    rdfs:comment """Plugin provided interface for receiving notifications of HMI addressings.""" .
+
+hmi:WidgetControl
+    a lv2:Feature ;
+    rdfs:label "HMI Widget Control" ;
+    rdfs:comment """Host provided feature that allows plugins to take control over certain details on the HMI side.""" .

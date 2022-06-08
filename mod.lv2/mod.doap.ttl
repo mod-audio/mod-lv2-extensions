@@ -1,0 +1,74 @@
+@prefix dcs:  <http://ontologi.es/doap-changeset#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://moddevices.com/ns/mod>
+    a doap:Project ;
+    doap:license <http://opensource.org/licenses/isc> ;
+    doap:name "MOD" ;
+    doap:homepage <http://moddevices.com/ns/mod> ;
+    doap:created "2016-03-28" ;
+    doap:shortdesc "Properties for describing MOD Devices related data." ;
+    doap:developer <https://falktx.com/> , <https://github.com/jkbd/> ;
+    doap:maintainer <https://falktx.com/> ;
+    doap:release [
+        doap:revision "1.0" ;
+        doap:created "2016-03-28" ;
+        doap:file-release <https://github.com/moddevices/mod-sdk/archive/v2.0.0.tar.gz> ;
+        dcs:changeset [
+            dcs:item [
+                rdfs:label "First stable release."
+            ]
+        ]
+    ] , [
+        doap:revision "1.1" ;
+        doap:created "2019-03-27" ;
+        doap:file-release <https://github.com/moddevices/mod-sdk/archive/v2.0.0.tar.gz> ;
+        dcs:blame <https://github.com/jkbd/> ;
+        dcs:changeset [
+            dcs:item [
+                rdfs:label "Add ControlVoltagePlugin category."
+            ] , [
+                rdfs:label "Add tempoRelatedDynamicScalePoints."
+            ]
+        ]
+    ] , [
+        doap:revision "1.2" ;
+        doap:created "2020-02-28" ;
+        doap:file-release <https://github.com/moddevices/mod-sdk/archive/v2.0.0.tar.gz> ;
+        dcs:blame <https://github.com/jkbd/> ;
+        dcs:changeset [
+            dcs:item [
+                rdfs:label "Add CVPort port type."
+            ] , [
+                rdfs:label "Add volts unit."
+            ] , [
+                rdfs:label "Add buildId and buildEnvironment for tracking origin of plugin build."
+            ] , [
+                rdfs:label "Specify rdfs:range for mod:builderVersion and mod:releaseNumber."
+            ]
+        ]
+    ] , [
+        doap:revision "1.3" ;
+        doap:created "2020-09-03" ;
+        doap:file-release <https://github.com/moddevices/mod-sdk/archive/v2.0.0.tar.gz> ;
+        dcs:blame <https://falktx.com/> ;
+        dcs:changeset [
+            dcs:item [
+                rdfs:label "Add mod:preferColouredListByDefault and mod:preferMomentary{On/Off}ByDefault properties."
+            ] , [
+                rdfs:label "Remove mod:notStompboxCapable."
+            ]
+        ]
+    ].
+
+<https://falktx.com/>
+    a foaf:Person ;
+    foaf:name "Filipe Coelho" ;
+    foaf:mbox <mailto:falktx@falktx.com> .
+
+<https://github.com/jkbd/>
+    a foaf:Person ;
+    foaf:name "Jakob Duebel" ;
+    foaf:mbox <mailto:jakob@moddevices.com> .

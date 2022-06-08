@@ -1,0 +1,22 @@
+@prefix lv2:     <http://lv2plug.in/ns/lv2core#> .
+@prefix license: <http://moddevices.com/ns/ext/license#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://moddevices.com/ns/ext/license>
+    a owl:Ontology ;
+    lv2:documentation """
+<p>
+This is a vocabulary for describing meda-data related to the MOD License API.
+</p>
+""" .
+
+license:feature
+    a lv2:Feature ;
+    rdfs:label "MOD License Feature" ;
+    rdfs:comment """Host provided feature for requesting license files for specific URIs.""" .
+
+license:interface
+	a lv2:ExtensionData ;
+    rdfs:label "MOD License Interface" ;
+    rdfs:comment """Plugin provided interface for querying information about a plugin's license.""" .
