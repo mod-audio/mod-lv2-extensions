@@ -54,6 +54,38 @@ mod:default
     rdfs:seeAlso lv2:default ;
     rdfs:comment "A custom default value specific to MOD devices, used in place of lv2:default." .
 
+mod:default_duo
+    a rdf:Property ,
+        owl:DatatypeProperty ,
+        owl:FunctionalProperty ;
+    rdfs:label "default" ;
+    rdfs:seeAlso mod:default ;
+    rdfs:comment "A custom default value specific to MOD Duo units, used in place of mod:default." .
+
+mod:default_duox
+    a rdf:Property ,
+        owl:DatatypeProperty ,
+        owl:FunctionalProperty ;
+    rdfs:label "default" ;
+    rdfs:seeAlso mod:default ;
+    rdfs:comment "A custom default value specific to MOD Duo X units, used in place of mod:default." .
+
+mod:default_dwarf
+    a rdf:Property ,
+        owl:DatatypeProperty ,
+        owl:FunctionalProperty ;
+    rdfs:label "default" ;
+    rdfs:seeAlso mod:default ;
+    rdfs:comment "A custom default value specific to MOD Dwarf units, used in place of mod:default." .
+
+mod:default_x64
+    a rdf:Property ,
+        owl:DatatypeProperty ,
+        owl:FunctionalProperty ;
+    rdfs:label "default" ;
+    rdfs:seeAlso mod:default ;
+    rdfs:comment "A custom default value specific to MOD x64 builds, used in place of mod:default." .
+
 mod:fileTypes
     a rdf:Property ,
         owl:DatatypeProperty ,
