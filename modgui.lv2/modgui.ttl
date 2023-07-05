@@ -555,3 +555,11 @@ modgui:monitoredOutputs
     rdfs:range modgui:MonitoredOutput ;
     rdfs:label "monitored outputs" ;
     rdfs:comment """A monitored output on a MOD GUI.""" .
+
+modgui:discussionURL
+    a rdf:Property ,
+        owl:ObjectProperty ;
+    rdfs:domain modgui:Gui ;
+    rdfs:range owl:Thing ;
+    rdfs:label "discussion url" ;
+    rdfs:comment """A URL for related discussion about this plugin, typically under https://forum.mod.audio/.""" .
